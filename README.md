@@ -13,3 +13,16 @@
 `brew update`
 `brew install rbenv ruby-build`
 
+`echo 'export RBENV_ROOT=/usr/local/var/rbenv' >> ~/.bashrc`
+`echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bashrc`
+`source ~/.bashrc`
+
+# Setup Project
+`git clone https://github.com/luhhsnunes/cucumber-workshop.git`
+`cd cucumber-workshop`
+
+`rbenv install`
+`rbenv rehash`
+
+`gem install bundler`
+`bundle install`
