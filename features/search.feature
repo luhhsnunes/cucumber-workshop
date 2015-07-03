@@ -11,4 +11,8 @@ And the credentials are valid
 Then I see a message informing that I have successfully logged in
 Then I see the page with my personal profile
 
-
+Scenario: User logs in with a invalid credentials
+Given I am at the login page
+When I login with a username and password
+But the credentials are invalid
+Then I see a message informing that the credentials are wrong
