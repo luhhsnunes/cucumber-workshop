@@ -16,3 +16,4 @@ Given I am at the login page
 When I login with a username and password
 But the credentials are invalid
 Then I see a message informing that the credentials are wrong
+And I see the login page
