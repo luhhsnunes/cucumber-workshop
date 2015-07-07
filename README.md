@@ -8,7 +8,7 @@
 ### Homebrew
 `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
 
-## RubyMine
+### RubyMine
 Download and install [RubyMine]
 [RubyMine]: https://www.jetbrains.com/ruby/download/
 
