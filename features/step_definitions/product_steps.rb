@@ -1,5 +1,5 @@
 Given(/^I am at the home page$/) do
-  visit 'https://ror-e.herokuapp.com'
+  expect(page.current_url).to eq('https://ror-e.herokuapp.com/')
 end
 
 When(/^I choose to find clothes$/) do
@@ -13,11 +13,8 @@ end
 
 Then(/^I see the following items:$/) do |table|
   within '#interesting_items' do
-    shopping_cart = table.raw
-    shopping_cart.each do |items|
-      items.each do |item|
-        expect(page).to have_content(item)
-      end
+    table.raw.flatten.each do |item|
+      expect(page).to have_content(item)
     end
   end
 end

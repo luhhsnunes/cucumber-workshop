@@ -4,6 +4,7 @@ Feature: Check for products on the website
   I want to be able to find existing products in the web store
   So that I am able to purchase what I want
 
+  @product
   Scenario: Search for clothes
     Given I am at the home page
     When I choose to find clothes
