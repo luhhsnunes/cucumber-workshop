@@ -4,8 +4,6 @@ Feature: Account management
   I want to manage an account
   So that I can purchase products on the website
 
-  Emails and CPF must be in a valid format, and the password must be greater than 6 chars.
-
   @account
   Scenario Outline: User creates a new account
     Given I am at the home page
