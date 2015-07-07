@@ -1,6 +1,16 @@
 # Cucumber Hands-on
 
-## Make sure you have these dependencies setup:
+> **Disclaimer:**
+
+> This is a repository prepared specially to the workshop at ThoughtWorks BH. All the exercises and their answers are under tags, so don't look or checkout them in advance. Don't be spoiler!
+
+> The implementation is not using the very best Cucumber practices. Some of them are out of scope for this workshop.
+
+> If you want to reuse this material in another workshops, you are welcome. **BUT** please, get in touch first :)
+
+
+
+## Make sure you have these dependencies setup
 
 ### Xcode Command Line Tools
 `xcode-select --install`
