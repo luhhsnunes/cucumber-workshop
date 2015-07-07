@@ -1,5 +1,11 @@
 Before("@product") do
-  page.visit 'https://ror-e.herokuapp.com'
+  @homepage = 'https://ror-e.herokuapp.com/'
+  page.visit @homepage
+end
+
+Before("@account") do
+  @homepage = 'https://lojaexemplod.lojablindada.com/'
+  page.visit @homepage
 end
 
 After do

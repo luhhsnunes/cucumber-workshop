@@ -1,5 +1,5 @@
 Given(/^I am at the home page$/) do
-  expect(page.current_url).to eq('https://ror-e.herokuapp.com/')
+  expect(page.current_url).to eq(@homepage)
 end
 
 When(/^I choose to find clothes$/) do
