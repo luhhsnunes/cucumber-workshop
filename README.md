@@ -8,12 +8,14 @@
 ### Homebrew
 `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
 
+## RubyMine
+Download and install [RubyMine]
+[RubyMine]: https://www.jetbrains.com/ruby/download/
 
 ### rbenv
 `brew update`
 
 `brew install rbenv ruby-build`
-
 
 `echo 'export RBENV_ROOT=/usr/local/var/rbenv' >> ~/.bashrc`
 
@@ -25,13 +27,12 @@
 # Setup Project
 `git clone https://github.com/luhhsnunes/cucumber-workshop.git`
 
-
 `cd cucumber-workshop`
 
-
 `rbenv install`
+
 `rbenv rehash`
 
-
 `gem install bundler`
+
 `bundle install`
