@@ -46,6 +46,10 @@ Download and install [RubyMine]
 
 `bundle install`
 
+## Installing cucumber
+
+gem install cucumber
+
 ## Testing if Cucumber has been successfully setup:
 `cd cucumber-workshop`
 
