@@ -6,7 +6,7 @@ Feature: Check for products on the website
 
   Scenario: Search for clothes
     Given I am at the home page
-    When choose to find clothes
+    When I choose to find clothes
     Then I am redirected to the results page
     And I see the following items:
       | Cute Polo         |

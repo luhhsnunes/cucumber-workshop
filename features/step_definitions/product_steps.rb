@@ -2,15 +2,22 @@ Given(/^I am at the home page$/) do
   visit 'https://ror-e.herokuapp.com'
 end
 
-When(/^choose to find clothes$/) do
-
+When(/^I choose to find clothes$/) do
+  find(:xpath, "//a[@href='/products']").hover
+  find(:xpath, "//a[@href='/products?product_type_id=1']").click
 end
 
 Then(/^I am redirected to the results page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page.current_url).to eq('https://ror-e.herokuapp.com/products?product_type_id=1')
 end
 
 Then(/^I see the following items:$/) do |table|
-  # table is a Cucumber::Core::Ast::DataTable
-  pending # Write code here that turns the phrase above into concrete actions
+  within '#interesting_items' do
+    shopping_cart = table.raw
+    shopping_cart.each do |items|
+      items.each do |item|
+        expect(page).to have_content(item)
+      end
+    end
+  end
 end
