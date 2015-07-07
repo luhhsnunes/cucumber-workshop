@@ -37,6 +37,8 @@ Download and install [RubyMine]
 `bundle install`
 
 ## Testing if Cucumber has been successfully setup:
+`cd cucumber-workshop`
+
 `cucumber`
 
 If everything is fine, you should see the following message on your terminal:
