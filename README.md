@@ -23,8 +23,7 @@ Download and install [RubyMine]
 
 `source ~/.bashrc`
 
-
-# Setup Project
+## Setting up the Project
 `git clone https://github.com/luhhsnunes/cucumber-workshop.git`
 
 `cd cucumber-workshop`
@@ -36,3 +35,10 @@ Download and install [RubyMine]
 `gem install bundler`
 
 `bundle install`
+
+## Testing if Cucumber has been successfully setup:
+`cucumber`
+
+If everything is fine, you should see the following message on your terminal:
+
+> No such file or directory - features. You can use `cucumber --init` to get started
